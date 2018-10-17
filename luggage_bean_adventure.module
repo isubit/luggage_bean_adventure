@@ -1,0 +1,27 @@
+<?php
+/**
+ * @file
+ * Code for the luggage_bean_adventure feature.
+ */
+
+include_once 'luggage_bean_adventure.features.inc';
+
+/**
+ * Implements hook_theme().
+ */
+function luggage_bean_adventure_theme($existing, $type, $theme, $path) {
+  $themes['bean__adventure'] = array(
+    'template' => 'bean--adventure',
+    'path' => drupal_get_path('module', 'luggage_bean_adventure') . '/templates'
+  );
+
+  return $themes;
+}
+
+/*
+ * Implements hook_preprocess_html.
+ */
+function luggage_bean_adventure_preprocess_html(&$vars) {
+  // Override suitcase_interim styles for this site.
+  drupal_add_css(drupal_get_path('module', 'luggage_bean_adventure') . '/css/luggage_bean_adventure.css', array('group' => 200));
+}

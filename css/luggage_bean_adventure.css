@@ -1,0 +1,102 @@
+.bean-adventure {
+  position: relative;
+}
+
+.bean-adventure_image {
+  width: 100%;
+}
+
+.bean-adventure_caption-wrapper {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  display: flex;
+  align-items: flex-start;
+  width: auto;
+  max-width: 750px;
+  padding: 2rem;
+  color: #ffffff;
+  background-color: rgba(205, 0, 0, 0.85);
+  background-size: 125px;
+}
+
+.bean-adventure_arrow {
+  width: 5rem;
+  margin-right: 2rem;
+}
+
+.bean-adventure_title {
+  margin-bottom: 0;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.bean-adventure_caption {
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  background: #cc0000;
+  margin-right: -3rem;
+  padding-right: 5rem;
+  margin-top: 1rem;
+}
+
+a.bean-adventure_button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.25rem 1rem;
+  color: #000000;
+  background: #f1be48;
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
+
+a.bean-adventure_button:hover,
+a.bean-adventure_button:focus {
+  background: #ffffff;
+}
+
+/* Positioning Overrides. Left is default so these override that. */
+
+.bean-adventure_caption-wrapper.bean-adventure_right {
+  left: auto;
+  right: 0;
+}
+
+.bean-adventure_right .bean-adventure_caption {
+  margin-right: -1rem;
+  padding-right: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .bean-adventure_caption-wrapper {
+    padding: 1rem;
+  }
+  .bean-adventure_title {
+    font-size: 1.5rem;
+  }
+  .bean-adventure_caption  {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 739px) {
+  .bean-adventure_caption-wrapper {
+    position: static;
+    width: 100%;
+    background-color: #cc0000;
+  }
+  .bean-adventure_caption {
+    padding: 0;
+    background: transparent;
+    margin-right: 0;
+    padding-right: 0;
+    margin-top: 0;
+  }
+}
+
+/* Kill external link icon */
+.bean-adventure a.external:after { display: none !important; }
+
+/* Hide the lie */
+input[value="bean_form"] ~ div > .description { display: none; }
