@@ -23,6 +23,7 @@ function luggage_bean_adventure_user_default_permissions() {
   $permissions['view any adventure bean'] = array(
     'name' => 'view any adventure bean',
     'roles' => array(
+      'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'bean',
