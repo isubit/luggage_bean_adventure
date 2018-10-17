@@ -1,4 +1,3 @@
-
 <div class="bean-adventure">
   <?php print render($title_suffix) ?>
   
