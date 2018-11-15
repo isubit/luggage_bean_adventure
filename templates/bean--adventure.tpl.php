@@ -3,7 +3,7 @@
   
   <img class="bean-adventure_image" src="<?php print file_create_url($bean->field_adventure_image['und'][0]['uri']); ?>" alt="<?php print $bean->field_adventure_image['und'][0]['alt']; ?>">
 
-  <div class="bean-adventure_caption-wrapper <?php if(isset($bean->field_adventure_position['und'][0]['value'])): print $bean->field_adventure_position['und'][0]['value']; endif; ?> <?php print $class ?>" style="background-image: url(<?php print base_path()?><?php print drupal_get_path('module', 'luggage_bean_adventure') . '/images/transparent-dots.png' ?>)">
+  <div class="bean-adventure_caption-wrapper <?php if(isset($bean->field_adventure_position['und'][0]['value'])): print $bean->field_adventure_position['und'][0]['value']; endif; ?>" style="background-image: url(<?php print base_path()?><?php print drupal_get_path('module', 'luggage_bean_adventure') . '/images/transparent-dots.png' ?>)">
 
     <img class="bean-adventure_arrow" src="<?php print base_path()?><?php print drupal_get_path('module', 'luggage_bean_adventure') . '/images/arrow.svg' ?>" alt=" ">
 
