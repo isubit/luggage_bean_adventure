@@ -13,7 +13,7 @@
   display: flex;
   align-items: flex-start;
   width: auto;
-  max-width: 750px;
+  max-width: 45%;
   padding: 2rem;
   color: #ffffff;
   background-color: rgba(205, 0, 0, 0.85);
@@ -21,8 +21,9 @@
 }
 
 .bean-adventure_arrow {
-  width: 5rem;
-  margin-right: 2rem;
+  width: 5vw;
+  min-width: 3rem;
+  margin-right: 2vw;
 }
 
 .bean-adventure_title {
@@ -45,6 +46,7 @@ a.bean-adventure_button {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.25rem 1rem;
+  font-size: 1rem;
   color: #000000;
   background: #f1be48;
   text-decoration: none;
@@ -54,6 +56,34 @@ a.bean-adventure_button {
 a.bean-adventure_button:hover,
 a.bean-adventure_button:focus {
   background: #ffffff;
+}
+
+@media  (max-width: 1700px) and (min-width: 1000px) {
+  .bean-adventure_content-wrapper {
+    font-size: 1.25vw;
+  }
+
+  .bean-adventure_title {
+    font-size: 1.5em;
+  }
+
+  .bean-adventure_caption {
+    font-size: 1.5em;
+  }
+}
+
+@media  (max-width: 999px) and (min-width: 739px) {
+  .bean-adventure_content-wrapper {
+    font-size: 1.25vw;
+  }
+
+  .bean-adventure_title {
+    font-size: 2em;
+  }
+
+  .bean-adventure_caption {
+    font-size: 1.75em;
+  }
 }
 
 /* Positioning Overrides. Left is default so these override that. */
@@ -72,18 +102,13 @@ a.bean-adventure_button:focus {
   .bean-adventure_caption-wrapper {
     padding: 1rem;
   }
-  .bean-adventure_title {
-    font-size: 1.5rem;
-  }
-  .bean-adventure_caption  {
-    font-size: 1rem;
-  }
 }
 
 @media (max-width: 739px) {
   .bean-adventure_caption-wrapper {
     position: static;
     width: 100%;
+    min-width: 100%;
     background-color: #cc0000;
   }
   .bean-adventure_caption {
