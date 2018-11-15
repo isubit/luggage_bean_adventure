@@ -13,16 +13,31 @@
   display: flex;
   align-items: flex-start;
   width: auto;
-  max-width: 750px;
+  max-width: 50%;
   padding: 2rem;
   color: #ffffff;
   background-color: rgba(205, 0, 0, 0.85);
   background-size: 125px;
 }
 
+@media  (max-width: 1700px) {
+  .bean-adventure_content-wrapper {
+    font-size: 1.25vw;
+  }
+
+  .bean-adventure_title {
+    font-size: 1.75em;
+  }
+
+  .bean-adventure_caption {
+    font-size: 1.25em;
+  }
+}
+
 .bean-adventure_arrow {
-  width: 5rem;
-  margin-right: 2rem;
+  width: 5vw;
+  min-width: 3rem;
+  margin-right: 2vw;
 }
 
 .bean-adventure_title {
@@ -45,6 +60,7 @@ a.bean-adventure_button {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.25rem 1rem;
+  font-size: 1rem;
   color: #000000;
   background: #f1be48;
   text-decoration: none;
@@ -84,6 +100,7 @@ a.bean-adventure_button:focus {
   .bean-adventure_caption-wrapper {
     position: static;
     width: 100%;
+    min-width: 100%;
     background-color: #cc0000;
   }
   .bean-adventure_caption {
