@@ -67,8 +67,11 @@ function luggage_bean_adventure_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        'bean-adventure_left' => 'Middle Left',
-        'bean-adventure_right' => 'Middle Right',
+        'bean-adventure_left_top' => 'Top Left',
+        'bean-adventure_right_top' => 'Top Right',
+        'bean-adventure_left_bottom' => 'Bottom Left',
+        'bean-adventure_right_bottom' => 'Bottom Right',
+        'bean-adventure_center' => 'Center',
       ),
       'allowed_values_function' => '',
     ),

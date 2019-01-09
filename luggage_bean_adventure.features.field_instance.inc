@@ -149,7 +149,7 @@ function luggage_bean_adventure_field_default_field_instances() {
     'bundle' => 'adventure',
     'default_value' => array(
       0 => array(
-        'value' => 'bean-adventure_left',
+        'value' => 'bean-adventure_left_bottom',
       ),
     ),
     'deleted' => 0,
