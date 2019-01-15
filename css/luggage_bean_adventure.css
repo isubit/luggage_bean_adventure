@@ -6,15 +6,19 @@
   width: 100%;
 }
 
-.bean-adventure_caption-wrapper {
+.bean-adventure_position-wrapper {
   position: absolute;
-  bottom: 25%;
-  left: 0;
+  top: 0; right: 0; left: 0; bottom: 0;
+  display: flex;
+  align-items: center;
+} /* Positions below */
+
+.bean-adventure_caption-wrapper {
   display: flex;
   align-items: flex-start;
   width: auto;
   max-width: 45%;
-  padding: 2rem;
+  padding: 1.5rem;
   color: #ffffff;
   background-color: rgba(205, 0, 0, 0.85);
   background-size: 125px;
@@ -34,7 +38,7 @@
 }
 
 .bean-adventure_caption {
-  font-size: 1.25rem;
+  font-size: 1rem;
   padding: 0.5rem 1rem;
   background: #cc0000;
   margin-right: -3rem;
@@ -62,41 +66,64 @@ a.bean-adventure_button:focus {
   .bean-adventure_content-wrapper {
     font-size: 1.25vw;
   }
-
-  .bean-adventure_title {
-    font-size: 1.5em;
-  }
-
-  .bean-adventure_caption {
-    font-size: 1.5em;
-  }
 }
 
 @media  (max-width: 999px) and (min-width: 739px) {
+  .bean-adventure_caption-wrapper {
+    bottom: 10%;
+  }
+
   .bean-adventure_content-wrapper {
     font-size: 1.25vw;
   }
-
-  .bean-adventure_title {
-    font-size: 2em;
-  }
-
-  .bean-adventure_caption {
-    font-size: 1.75em;
-  }
 }
 
-/* Positioning Overrides. Left is default so these override that. */
+/* Positioning options */
 
-.bean-adventure_caption-wrapper.bean-adventure_right {
+.bean-adventure_position-wrapper.bean-adventure_left_top,
+.bean-adventure_position-wrapper.bean-adventure_right_top {
+  align-items: flex-start;
+  margin-top: 10%;
+}
+
+.bean-adventure_position-wrapper.bean-adventure_left_bottom,
+.bean-adventure_position-wrapper.bean-adventure_right_bottom  {
+  align-items: flex-end;
+  margin-bottom: 10%;
+}
+
+.bean-adventure_position-wrapper.bean-adventure_right_top,
+.bean-adventure_position-wrapper.bean-adventure_right_bottom {
+  justify-content: flex-end;
+}
+
+.bean-adventure_position-wrapper.bean-adventure_center {
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+.bean-adventure_caption-wrapper.bean-adventure_left_bottom,
+.bean-adventure_caption-wrapper.bean-adventure_right_bottom {
+  top: auto;
+  bottom: 15%;
+}
+
+.bean-adventure_caption-wrapper.bean-adventure_right_top,
+.bean-adventure_caption-wrapper.bean-adventure_right_bottom {
   left: auto;
   right: 0;
 }
 
-.bean-adventure_right .bean-adventure_caption {
+.bean-adventure_right_top .bean-adventure_caption,
+.bean-adventure_right_bottom .bean-adventure_caption {
   margin-right: -1rem;
   padding-right: 1rem;
 }
+
+.bean-adventure_right_top.bean-adventure_caption-wrapper {
+  top: 15%;
+}*/
 
 @media (max-width: 1000px) {
   .bean-adventure_caption-wrapper {
@@ -105,12 +132,18 @@ a.bean-adventure_button:focus {
 }
 
 @media (max-width: 739px) {
-  .bean-adventure_caption-wrapper {
+  .bean-adventure_position-wrapper {
     position: static;
+    width: 100%;
+    margin-bottom: 0 !important;
+  }
+
+  .bean-adventure_caption-wrapper {
     width: 100%;
     min-width: 100%;
     background-color: #cc0000;
   }
+
   .bean-adventure_caption {
     padding: 0;
     background: transparent;
