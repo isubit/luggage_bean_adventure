@@ -13,6 +13,19 @@
   align-items: center;
 } /* Positions below */
 
+.bean-adventure_image-link {
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.bean-adventure_image-link:after {
+  content: '';
+}
+
 .bean-adventure_caption-wrapper {
   display: flex;
   align-items: flex-start;
@@ -22,6 +35,7 @@
   color: #ffffff;
   background-color: rgba(205, 0, 0, 0.85);
   background-size: 125px;
+  z-index: 2;
 }
 
 .bean-adventure_arrow {
@@ -83,13 +97,13 @@ a.bean-adventure_button:focus {
 .bean-adventure_position-wrapper.bean-adventure_left_top,
 .bean-adventure_position-wrapper.bean-adventure_right_top {
   align-items: flex-start;
-  margin-top: 10%;
+  padding-top: 10%;
 }
 
 .bean-adventure_position-wrapper.bean-adventure_left_bottom,
 .bean-adventure_position-wrapper.bean-adventure_right_bottom  {
   align-items: flex-end;
-  margin-bottom: 10%;
+  padding-bottom: 10%;
 }
 
 .bean-adventure_position-wrapper.bean-adventure_right_top,

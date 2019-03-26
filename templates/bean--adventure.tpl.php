@@ -1,9 +1,16 @@
 <div class="bean-adventure">
   <?php print render($title_suffix) ?>
-  
+
   <img class="bean-adventure_image" src="<?php print file_create_url($bean->field_adventure_image['und'][0]['uri']); ?>" alt="<?php print $bean->field_adventure_image['und'][0]['alt']; ?>">
 
   <div class="bean-adventure_position-wrapper <?php if(isset($bean->field_adventure_position['und'][0]['value'])): print $bean->field_adventure_position['und'][0]['value']; endif; ?>">
+
+    <?php if (isset($bean->field_adventure_url['und'][0]['url'])): ?>
+    <a class="bean-adventure_image-link" href="<?php print $bean->field_adventure_url['und'][0]['url']; ?>">
+      <span class="sr-only">Read more about <?php print $title; ?></span>
+    </a>
+    <?php endif; ?>
+
     <div class="bean-adventure_caption-wrapper" style="background-image: url(<?php print base_path()?><?php print drupal_get_path('module', 'luggage_bean_adventure') . '/images/transparent-dots.png' ?>)">
 
       <img class="bean-adventure_arrow" src="<?php print base_path()?><?php print drupal_get_path('module', 'luggage_bean_adventure') . '/images/arrow.svg' ?>" alt=" ">
