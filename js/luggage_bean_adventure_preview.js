@@ -72,8 +72,8 @@
     });
 
 
-    // CHECK CAPTION
-    // First check on page load
+    // 06 Update the caption
+    // .. Follow the same routine as the title above.
     $('#adventure_caption').html(adventure_caption);
 
     if (adventure_caption == '') {
@@ -82,7 +82,6 @@
         $('#adventure_caption').show();
     }
 
-    // Then check on change
     $('textarea#edit-field-adventure-caption-und-0-value').change(function(){
       var adventure_caption = $(this).val();
 
@@ -95,8 +94,8 @@
       $('#adventure_caption').html(adventure_caption);
     });
 
-    // CHECK LINK TITLE
-    // First check on page load
+    // 07 Update the button title
+    // .. Follow the same routine as the title above.
     $('#adventure_link_title').html(adventure_link_title);
 
     if (adventure_link_title == '') {
@@ -104,7 +103,7 @@
       } else { 
         $('#adventure_link_title').show(); $('#adventure_content').show();
     }
-    // Then check on change
+
     $('input#edit-field-adventure-url-und-0-title').change(function(){
       var adventure_link_title = $(this).val();
 
@@ -117,13 +116,12 @@
       $('#adventure_link_title').html(adventure_link_title);
     });
 
-    // CHECK POSITION
-    // First check on page load
+    // 08 Update the position
+    // .. Get the value of the field and use it as the class.
     var adventure_position = $('select#edit-field-adventure-position-und').val();
-
     $('#adventure_position').attr('class', 'bean-adventure_position-wrapper ' + adventure_position);
 
-    // Then check on change
+    // .. Check again when the field changes.
     $('select#edit-field-adventure-position-und').change(function(){
         var adventure_position = $(this).val();
         $('#adventure_position').attr('class', 'bean-adventure_position-wrapper ' + adventure_position);
