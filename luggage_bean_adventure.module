@@ -25,3 +25,16 @@ function luggage_bean_adventure_preprocess_html(&$vars) {
   // Override suitcase_interim styles for this site.
   drupal_add_css(drupal_get_path('module', 'luggage_bean_adventure') . '/css/luggage_bean_adventure.css', array('group' => 200));
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function luggage_bean_adventure_form_bean_form_alter(&$form, &$form_state, $form_id) {
+
+  global $base_url;
+
+  drupal_add_js(array('luggage_bean_adventure' => array('module_path' => drupal_get_path('module', 'luggage_bean_adventure'))), 'setting');
+  drupal_add_js(array('luggage_bean_adventure' => array( 'base_path'=> $base_url )), 'setting');
+
+  drupal_add_js(drupal_get_path('module', 'luggage_bean_adventure') . '/js/luggage_bean_adventure_preview.js');
+}

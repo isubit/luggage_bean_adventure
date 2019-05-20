@@ -172,3 +172,17 @@ a.bean-adventure_button:focus {
 
 /* Hide the lie */
 input[value="bean_form"] ~ div > .description { display: none; }
+
+/* Preview Specific Styles */
+
+.adventure-preview-update {
+  margin-bottom: 1rem;
+}
+
+.adventure-preview .bean-adventure {
+  overflow: hidden;
+}
+
+.adventure-preview .bean-adventure_title {
+  line-height: 1.15;
+}
