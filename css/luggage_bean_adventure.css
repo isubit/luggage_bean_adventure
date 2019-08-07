@@ -116,6 +116,16 @@ a.bean-adventure_button:focus {
   justify-content: center;
 }
 
+.bean-adventure_position-wrapper.bean-adventure_left_center {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.bean-adventure_position-wrapper.bean-adventure_right_center {
+  align-items: center;
+  justify-content: flex-end;
+}
+
 /*
 .bean-adventure_caption-wrapper.bean-adventure_left_bottom,
 .bean-adventure_caption-wrapper.bean-adventure_right_bottom {
