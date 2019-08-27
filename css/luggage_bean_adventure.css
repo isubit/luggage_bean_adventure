@@ -84,7 +84,7 @@ a.bean-adventure_button:focus {
 
 @media  (max-width: 999px) and (min-width: 739px) {
   .bean-adventure_caption-wrapper {
-    bottom: 10%;
+    bottom: 5%;
   }
 
   .bean-adventure_content-wrapper {
@@ -97,13 +97,13 @@ a.bean-adventure_button:focus {
 .bean-adventure_position-wrapper.bean-adventure_left_top,
 .bean-adventure_position-wrapper.bean-adventure_right_top {
   align-items: flex-start;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 .bean-adventure_position-wrapper.bean-adventure_left_bottom,
 .bean-adventure_position-wrapper.bean-adventure_right_bottom  {
   align-items: flex-end;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
 }
 
 .bean-adventure_position-wrapper.bean-adventure_right_top,
@@ -160,6 +160,8 @@ a.bean-adventure_button:focus {
     position: static;
     width: 100%;
     margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
 
   .bean-adventure_caption-wrapper {
