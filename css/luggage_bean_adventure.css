@@ -191,6 +191,10 @@ input[value="bean_form"] ~ div > .description { display: none; }
   margin-bottom: 1rem;
 }
 
+.adventure-preview {
+  max-width: 1220px;
+}
+
 .adventure-preview .bean-adventure {
   overflow: hidden;
 }
