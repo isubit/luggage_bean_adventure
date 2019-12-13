@@ -46,6 +46,10 @@
   margin-top: 1rem;
 }
 
+.bean-adventure_caption:first-child {
+  margin-top: 0;
+}
+
 a.bean-adventure_button {
   display: inline-block;
   margin-top: 1rem;
@@ -60,6 +64,10 @@ a.bean-adventure_button {
 a.bean-adventure_button:hover,
 a.bean-adventure_button:focus {
   background: #ffffff;
+}
+
+.bean-adventure_button:first-child {
+  margin-top: 0.5rem;
 }
 
 @media  (max-width: 1700px) and (min-width: 1000px) {
