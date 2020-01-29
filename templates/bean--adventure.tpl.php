@@ -1,3 +1,5 @@
+<!-- Remember to make any chages to this template in the luggage_bean_adventure_preview.js -->
+
 <div class="bean-adventure">
   <?php print render($title_suffix) ?>
 
@@ -11,9 +13,9 @@
     </a>
     <?php endif; ?>
 
-    <div class="bean-adventure_caption-wrapper" style="background-image: url(<?php print base_path()?><?php print drupal_get_path('module', 'luggage_bean_adventure') . '/images/transparent-dots.png' ?>)">
+    <div class="bean-adventure_caption-wrapper" style="background-image: url(<?php print base_path()?><?php print drupal_get_path('module', 'luggage_bean_adventure') . '/images/cloud1.png' ?>)">
 
-      <img class="bean-adventure_arrow" src="<?php print base_path()?><?php print drupal_get_path('module', 'luggage_bean_adventure') . '/images/arrow.svg' ?>" alt=" ">
+      <img class="bean-adventure_arrow" src="<?php print base_path()?><?php print drupal_get_path('module', 'luggage_bean_adventure') . '/images/stripes.svg' ?>" alt=" ">
 
       <div class="bean-adventure_content-wrapper">
         
