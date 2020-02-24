@@ -83,7 +83,7 @@ function luggage_bean_adventure_field_default_field_instances() {
   $field_instances['bean-adventure-field_adventure_image'] = array(
     'bundle' => 'adventure',
     'deleted' => 0,
-    'description' => 'This is the hero banner image. Recommended size width is at least 2000px wide by 500px tall. The height of the image will determine how much space is available for the caption.<br><b>Be sure to check that your caption does not overflow this image.</b>',
+    'description' => 'This is the hero banner image. Recommended size width is at least 2000px wide by 500px tall. <b>Your image should be about 700k</b>; if it is much larger please resize and compress it. The height of the image will determine how much space is available for the caption.<br><b>Be sure to check that your caption does not overflow this image.</b>',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
