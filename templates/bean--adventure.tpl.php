@@ -23,8 +23,10 @@
           <?php endif; ?>
 
           <?php if (isset($bean->field_adventure_url['und'][0]['url'])): ?>
-          <a class="bean-adventure_button" href="<?php print $bean->field_adventure_url['und'][0]['url']; ?>"><?php print $bean->field_adventure_url['und'][0]['title']; ?></a>
+          
+          <a class="bean-adventure_button" href="<?php print $bean->field_adventure_url['und'][0]['url']; ?>" <?php if (isset($bean->field_adventure_url['und'][0]['attributes']['target'])): ?>target="<?php print $bean->field_adventure_url['und'][0]['attributes']['target']; ?>"<?php endif; ?>><?php print $bean->field_adventure_url['und'][0]['title']; ?></a>
           <?php endif; ?>
+          
         </div>
       </div>
 
